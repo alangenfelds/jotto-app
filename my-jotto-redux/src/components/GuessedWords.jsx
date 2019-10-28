@@ -8,12 +8,12 @@ const GuessedWords = props => {
     <div className="" data-test="component-guessed-words">
       {guessedWords.length === 0 ? (
         <span data-test="component-guessed-instructions">
-          Try to guess the secret word
+          <h4>Try to guess the secret word</h4>
         </span>
       ) : (
         <div data-test="guessed-words-section">
-          <table>
-            <thead>
+          <table className="table table-sm">
+            <thead className="thead-light">
               <tr>
                 <th>Guess</th>
                 <th>Matching Letters</th>
